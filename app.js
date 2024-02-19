@@ -74,6 +74,8 @@ function getRemaindingTime() {
     return item;
   }
 
+  
+
   items.forEach(function (item, index) {
     item.innerHTML = format(values[index]);
   });
