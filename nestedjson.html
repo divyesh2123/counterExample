@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+
+        fetch("https://jsonplaceholder.typicode.com/users").then(y=>y.json())
+        .then(y=>{
+
+
+            display(y);
+        });
+
+        const display = (v)=>
+        {
+            v.map((p)=>{
+
+                let d ='';
+
+                if(typeof p == "object")
+                {
+
+                }
+                else
+                {
+                    d+=`<td>${}</td>`
+                }
+
+
+            })
+
+
+        }
+
+        const nestedJson = ()=>{
+
+
+        }
+
+    </script>
+    
+</body>
+</html>
